@@ -150,46 +150,92 @@ input[type="number"] {
   opacity: 1;
 }
 
-.previus-display,
-.display {
+.click-me {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  outline: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.previus-display {
+  margin: auto;
   text-align: end;
   height: 20px;
   width: 150px;
-  border: 1px solid #000000;
-  background-color: #000;
+  box-sizing: border-box;
+  background-color: indigo;
+  color: #fff;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+.display {
+  margin: auto;
+  text-align: end;
+  height: 20px;
+  width: 150px;
+  background-color: indigo;
   color: #ffffff;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.calk-body {
+  border: 1px solid #000000;
 }
 
 .opers {
+  margin: auto;
   border: 1px solid #000000;
   width: 150px;
   height: auto;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+  background-color: indigo;
+  border-top: none;
 }
 .double-button {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: orangered;
+  background-color: #9c88ff;
+  border: 1px solid #9c88ff;
+  outline: none;
+  border-radius: 90px;
+  margin: 1px;
 }
 
-.double-button-eq {
-  background-color: orangered;
-}
 .button {
-  background-color: orange;
+  background-color: #f7f7f7;
   outline: none;
+  border: 0;
+  border: 1px solid #f7f7f7;
+  border-radius: 90px;
+  margin: 1px;
 }
 .button-oper {
-  background-color: orangered;
+  background-color: #9c88ff;
+  outline: none;
+  border: 0;
+  border: 1px solid #9c88ff;
+  margin: 1px;
+  border-radius: 90px;
 }
 .button-zero {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: orange;
-}
-.calc {
-  align-items: center;
-  margin-left: 50px;
+  background-color: #f7f7f7;
+  /* border: 0; */
+  outline: none;
+  border: 1px solid #f7f7f7;
+  border-radius: 90px;
+  margin: 1px;
 }

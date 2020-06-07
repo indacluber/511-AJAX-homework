@@ -119,23 +119,11 @@ init();
 
 form.addEventListener("submit", addTransaction);
 
-// document.querySelector(".click-me").addEventListener("click", fetchHTML);
+document.querySelector(".click-me").addEventListener("click", fetchHTML);
 
-// async function fetchHTML() {
-//   const response = await fetch("calculator.html");
-//   const html = await response.text();
-//   document.querySelector(".calk").innerHTML = html;
-// }
-
-document.querySelector(".click-me").addEventListener("click", getAjaxHTML);
-
-function getAjaxHTML() {
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      document.querySelector(".calc-contaiiner").innerHTML = xhr.response;
-    }
-  };
-  xhr.open("get", "dada.html", true);
-  xhr.send();
+async function fetchHTML() {
+  const response = await fetch("calculator.html");
+  const html = await response.text();
+  document.querySelector(".calk-container").innerHTML = html;
+  runCalkulator();
 }
